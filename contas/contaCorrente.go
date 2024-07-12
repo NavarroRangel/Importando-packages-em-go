@@ -4,9 +4,8 @@ import "example.com/meuprojeto/clientes"
 
 type ContaCorrente struct {
 	Titular       		clientes.Titular
-	NumeroAgencia 		int
-	NumeroConta   		int
-	saldo         		float64
+	NumeroAgencia, NumeroConta 		int
+	saldo         					float64
 }
 
 func (c *ContaCorrente) Sacar(valorDoSaque float64) string {
